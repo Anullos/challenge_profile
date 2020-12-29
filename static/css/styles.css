@@ -1,6 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+  --darkGray: hsl(0, 0%, 59%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--darkCyan);
+}
+
+.fondo {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.bgtop {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../static/img/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: -600px;
+}
+
+.bgdown {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-image: url(../../static/img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-y: 300px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 340px;
+  height: 360px;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  background-image: url(../../static/img/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+}
+
+.imagen {
+  display: flex;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+.bimg {
+  border-radius: 50%;
+  padding: 5px;
+  width: 95px;
+  background-color: white;
+}
+
+.imagen img {
+  border-radius: 50%;
+  width: 90px;
+  z-index: 1;
+}
+
+.datos {
+  margin-top: 20px;
+}
+
+.datos h3 {
+  display: inline-flex;
+  margin: 0;
+  font-size: 1em;
+}
+
+.edad {
+  color: var(--darkGray);
+}
+
+.datos p {
+  margin: 10px;
+  color: var(--darkGray);
+  font-size: 0.7em;
+}
+
+.linea {
+  position: absolute;
+  bottom: 70px;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.seguidores {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cajita h3 {
+  margin: 0;
+  font-size: 1em;
+  color: var(--veryDarkDesaturatedBlue);
+}
+
+.cajita p {
+  margin: 5px;
+  font-size: 0.5em;
+  color: var(--darkGray);
+  letter-spacing: 1.2px;
 }
 
 /*# sourceMappingURL=styles.css.map */
